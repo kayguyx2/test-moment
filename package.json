@@ -1,0 +1,16 @@
+{
+  "name": "test-moment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kayguyx2/test-moment.git",
+  "author": "guy.thanet <kayguyx2@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43"
+  }
+}
