@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
         .tz("Asia/Bankkok")
         .utcOffset("+0700")
         .format("DD/MM/YYYY HH:MM"),
+      s1: momentTz()
+        .subtract(1, "day")
+        .set({ hour: 23, minute: 59, second: 0, millisecond: 0 })
+        .tz("Asia/Bangkok")
+        .utcOffset("+0700"),
     },
   });
 });
