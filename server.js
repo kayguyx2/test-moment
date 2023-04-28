@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
         .format("DD/MM/YYYY HH:MM"),
       s1: momentTz()
         .subtract(1, "day")
-        .set({ hour: 23, minute: 59, second: 0, millisecond: 0 })
+        .set({ hour: 23, minute: 59, second: 59, millisecond: 59 })
         .tz("Asia/Bangkok")
         .utcOffset("+0700"),
       s2: momentTz().endOf("day").tz("Asia/Bangkok").utcOffset("+0700"),
