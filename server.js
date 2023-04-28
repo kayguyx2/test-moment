@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
         .set({ hour: 23, minute: 59, second: 0, millisecond: 0 })
         .tz("Asia/Bangkok")
         .utcOffset("+0700"),
+      s2: momentTz().endOf("day").tz("Asia/Bangkok").utcOffset("+0700"),
     },
   });
 });
